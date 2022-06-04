@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', monospace;
+}
+
+body {
+    display: flex;
+}
+
+iframe {
+    width: 100vw;
+    height: 100vh;
+}
+
+.positionContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 65vw;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    margin-right: 11rem;
+}
+
+.positionContainer .positionTitle {
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.positionContainer h2 {
+    text-align: center;
+    font-weight: lighter;
+}
+
+.positionContainer input {
+    padding: 1rem;
+    box-shadow: .2rem .2rem .2rem .2rem rgba(0, 0, 0, .2);
+    outline: none;
+}
+
+.positionContainer div {
+    width: 27.5rem;
+    height: .2rem;
+    background: #C4C4C4;
+    border-radius: .2rem;
+}
+
+.positionContainer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 3rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: white;
+    background: var(--bgblue);
+    border-radius: .3rem;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.positionContainer a:hover {
+    cursor: pointer;
+    transform: scale3d(1.03, 1.03, 1.03);
+    filter: brightness(1.07);
+}

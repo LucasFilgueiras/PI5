@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', monospace;
+}
+
+body {
+    display: flex;
+    gap: 9rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.container h1 {
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+
+.container p {
+    font-size: 1.4rem;
+    opacity: .6;
+}
+
+.container .subContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3rem;
+}
+
+.container .subContainer .button {
+    background: rgba(128, 128, 128, 0.089);
+    padding: 2rem;
+    box-shadow: 5px 5px rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    color: black;
+    font-size: 1.02rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.container .subContainer .button:hover {
+    transform: scale3d(1.03, 1.03, 1.03);
+    cursor: pointer;
+}
+
+.container .subContainer .questionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(128, 128, 128, 0.089);
+    padding: 1rem 2rem;
+    box-shadow: 5px 5px rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    transition: .5s;
+}
+
+.container .subContainer .questionContainer p {
+    color: black;
+}
+
+.container .subContainer .questionContainer:hover {
+    cursor: pointer;
+    transform: scale3d(1.03, 1.03, 1.03);
+}
+
+.container .subContainer .questionContainer img {
+    width: 25px;
+}

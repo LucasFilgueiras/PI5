@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', monospace;
+}
+
+body {
+    display: flex;
+    gap: 12rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container .subContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+}
+
+.container .subContainer a {
+    color: black;
+    opacity: 1;
+    font-weight: bold;
+    background: rgba(128, 128, 128, 0.055);
+    padding: 1.5rem;
+    border-radius: .2rem;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.164);
+    text-decoration: none;
+    transition: .5s;
+}
+
+.container .subContainer a:hover {
+    cursor: pointer;
+    transform: scale3d(1.03, 1.03, 1.03);
+    filter: brightness(.1);
+}
+

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', monospace;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+}
+
+.container h1 {
+    font-size: 2.5rem;
+}
+
+.container .questions {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.container p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.container .questions p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: black;
+    opacity: 1;
+    font-weight: bold;
+    background: rgba(128, 128, 128, 0.055);
+    padding: .5rem;
+    width: 40rem;
+    border-radius: .2rem;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.164);
+    transition: .5s;
+}
+
+.container .questions p:hover {
+    cursor: pointer;
+    transform: scale3d(1.01, 1.01, 1.01);
+}

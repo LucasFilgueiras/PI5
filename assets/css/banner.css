@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', monospace;
+    overflow-y: hidden;
+}
+
+:root {
+    --bgblue: #5975D8;
+}
+
+.bannerContainer {
+    width: 35vw;
+    height: 100vh;
+    background: var(--bgblue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9rem;
+}
+
+.bannerContainer h1 {
+    color: white;
+    text-align: center;
+    margin-top: 2.5rem;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.bannerContainer main img {
+    width: 29rem;
+    height: 29rem;
+    object-fit: cover;
+}

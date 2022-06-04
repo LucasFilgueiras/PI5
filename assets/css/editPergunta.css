@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', monospace;
+}
+
+body {
+    display: flex;
+    gap: 9rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.container h1 {
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+}
+
+.container .firstQuestion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+}
+
+.container .firstQuestion p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.container .firstQuestion input {
+    padding: 1rem;
+    width: 35rem;
+    box-shadow: .2rem .2rem .2rem .2rem rgba(0, 0, 0, .2);
+    text-decoration: none;
+    outline: none;
+}
+
+.container .secondQuestion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+}
+
+.container .secondQuestion p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.container .secondQuestion input {
+    padding: 1rem;
+    width: 35rem;
+    box-shadow: .2rem .2rem .2rem .2rem rgba(0, 0, 0, .2);
+    text-decoration: none;
+    outline: none;
+}
+
+.container .thirdQuestion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+}
+
+.container .thirdQuestion p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.container .thirdQuestion input {
+    padding: 1rem;
+    width: 35rem;
+    box-shadow: .2rem .2rem .2rem .2rem rgba(0, 0, 0, .2);
+    text-decoration: none;
+    outline: none;
+}
+
+.container .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 3rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: white;
+    background: #5975D8;
+    border-radius: .3rem;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.container .button:hover {
+    cursor: pointer;
+    transform: scale3d(1.03, 1.03, 1.03);
+}
