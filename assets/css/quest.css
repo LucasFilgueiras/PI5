@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', monospace;
+}
+
+header {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1);
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 1rem 0;
+}
+
+header .line {
+    width: 100vw;
+    height: 1.5px;
+    background: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 6rem;
+}
+
+main .firstContainer {
+    display: flex;
+    margin-top: 2rem;
+    gap: 12rem;
+    align-items: center;
+}
+
+main .firstContainer p {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+main .firstContainer img {
+    width: 25rem;
+}
+
+main .secondContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+}
+
+main .secondContainer .button {
+    padding: 1.5rem 5rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: white;
+    background: #5975D8;
+    border-radius: .3rem;
+    transition: .5s;
+    text-decoration: none;
+}
+
+main .secondContainer .button:hover {
+    transform: scale3d(1.03, 1.03, 1.03);
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .2);
+    filter: brightness(1.08);
+}
+
