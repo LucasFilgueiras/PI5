@@ -48,18 +48,20 @@ body {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.164);
 }
 
-.container .subContainer2 .questionContainer {
+.container .subContainer2 .questionContainer1,.container .subContainer2 .questionContainer2 {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
 }
 
-.container .subContainer2 .questionContainer img {
+.container .subContainer2 .questionContainer1 img,.container .subContainer2 .questionContainer2 img {
     width: 25px;
     cursor: pointer;
+    margin: 0;
+    padding: 0;
 }
 
-.questionContainer.remove {
-    display: none;
+.questionContainer2.remove {
+    visibility: hidden;
 }
