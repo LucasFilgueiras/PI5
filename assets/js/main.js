@@ -3,6 +3,7 @@
 // user.innerHTML = `Bem Vindo(a) ${nameUser}`;
 
 let deleteImg = document.querySelector(".delete");
+let sendButton = document.querySelector('#send')
 
 function deleteQuestion() {
   let container1 = document.querySelector(".subContainer2");
@@ -22,4 +23,9 @@ function deleteQuestion() {
 // }
 
 deleteImg.addEventListener("click", deleteQuestion);
+sendButton.addEventListener("click", ()=> {
+      const email = document.querySelector(".name");
+      const emailValue = name.value;
+      sessionStorage.setItem("Email", emailValue);
+});
 // proximo.addEventListener("click", newQuestion);
