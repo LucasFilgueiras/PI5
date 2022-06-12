@@ -6,7 +6,7 @@
     border: 0;
     box-sizing: border-box;
     font-family: 'Inter', monospace;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 :root {
@@ -35,4 +35,10 @@
     width: 29rem;
     height: 29rem;
     object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+    .bannerContainer {
+        display: none;
+    }
 }
