@@ -9,5 +9,4 @@ async function postMethod(data, lastUrl){
         body: JSON.stringify(data)
     })
     return response.json()
-
 }

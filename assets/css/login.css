@@ -54,7 +54,7 @@ iframe {
     border-radius: .2rem;
 }
 
-.loginContainer button {
+.loginContainer .button {
     padding: .8rem 4rem;
     margin-top: 2rem;
     font-weight: bold;
@@ -65,7 +65,7 @@ iframe {
     transition: .5s;
 }
 
-.loginContainer button:hover {
+.loginContainer .button:hover {
     cursor: pointer;
     transform: scale3d(1.03, 1.03, 1.03);
     filter: brightness(1.07);
