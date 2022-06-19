@@ -8,6 +8,12 @@ async function login() {
     email: inputEmail,
     password: inputPassword,
   };
+
+  if (inputEmail == "" || inputPassword == "") {
+    window.alert("Insira e-mail e senha.");
+    window.location.href = "./login.html";
+  }
+
   let tokens = await postMethod(login, "user/login");
   sessionStorage.setItem("accessToken", tokens.accessToken);
   sessionStorage.setItem("refreshToken", tokens.refreshToken);
