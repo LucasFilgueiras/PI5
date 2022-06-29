@@ -10,7 +10,8 @@ async function captureQuestion() {
   let getQuestion = sessionStorage.getItem("Enunciado");
 
   let questionDB = {
-    titulo: getQuestion,
+    idQuestionario: Math.random(),
+    setEnunciado: getQuestion,
   };
 
   alternative = {
