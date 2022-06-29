@@ -6,6 +6,37 @@ async function captureQuestion() {
 
   sessionStorage.setItem("Enunciado", enunciado);
   sessionStorage.setItem("Tema", tema);
+
+  let getQuestion = sessionStorage.getItem("Enunciado");
+
+  let questionDB = {
+    titulo: getQuestion,
+  };
+
+  alternative = {
+    idQuestion: 0,
+    setAlternative: [
+      {
+        questionText: "Resposta 1",
+        rightText: false,
+      },
+      {
+        questionText: "Resposta 2",
+        rightText: false,
+      },
+      {
+        questionText: "Resposta 3",
+        rightText: false,
+      },
+      {
+        questionText: "Resposta 4",
+        rightText: true,
+      },
+    ],
+  };
+
+  await postMethod(questionDB, "/questao");
+  await postMethod(alternative, "/alternativa");
 }
 
 next.addEventListener("click", captureQuestion);
