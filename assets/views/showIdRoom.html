@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Questionário</title>
+    <title>Código da Sala</title>
 
-    <link rel="stylesheet" href="../css/iniciarQuestionário.css">
     <link rel="stylesheet" href="../css/bannerProfessor.css">
+    <link rel="stylesheet" href="../css/showIdRoom.css">
 </head>
 <body>
     <header class="teacherContainer">
         <div class="subContainer">
-            <h1>Bem vindo(a) Saulo</h1>
+            <h1 class="user">Bem vindo(a) Saulo</h1>
             <div class="imgContainer">
                 <img src="../images/imagemProfessor.svg" alt="Imagem do professor">
                 <p>Professor</p>
@@ -26,13 +26,12 @@
         </div>
     </header>
 
-    <div class="container">
-        <h1>Escolha um questionário <br> para iniciar:</h1>
-        <div class="subContainer">
-            <a href="./showIdRoom.html">Banco de dados 1</a>
-            <a href="#">Gerência de Projetos</a>
-            <a href="#">Engenharia de Software</a>
-        </div>
-    </div>
+    <main>
+        <h1>Use este código para entrar <br> no questionário:</h1>
+        <p class="showCode">4456</p>
+        <button class="button">Atualizar código</button>
+    </main>
+
+    <script src="../js/generateRoom.js"></script>
 </body>
 </html>

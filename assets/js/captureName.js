@@ -2,30 +2,34 @@ function captureName() {
   const professorButton = document.querySelector(".professor");
   const alunoButton = document.querySelector(".aluno");
 
-  professorButton.addEventListener("click", () => {
+  professorButton.addEventListener("click", async () => {
     const name = document.querySelector(".name");
     const nameValue = name.value;
     sessionStorage.setItem("Nome", nameValue);
-    insertRegister();
+    await insertRegister("Professor");
+    window.location.href = "./gerPerguntas.html";
   });
 
-  alunoButton.addEventListener("click", () => {
+  alunoButton.addEventListener("click", async () => {
     const name = document.querySelector(".name");
     const nameValue = name.value;
     sessionStorage.setItem("Nome", nameValue);
-    insertRegister();
+    await insertRegister("Aluno");
+    window.location.href = "./responderQuest.html";
   });
 }
 
-async function insertRegister() {
+async function insertRegister(cargo) {
   let dataRegister = {
     email: sessionStorage.getItem("Email"),
     password: sessionStorage.getItem("Password"),
-    username: sessionStorage.getItem("Nome")
+    username: sessionStorage.getItem("Nome"),
+    cargo: cargo
   };
+  console.log(dataRegister);
   let tokens = await postMethod(dataRegister, "user/register");
-  sessionStorage.setItem("accessToken", tokens.accessToken);
-  sessionStorage.setItem("refreshToken", tokens.refreshToken);
+  sessionStorage.setItem("accessToken", tokens.tokens.accessToken);
+  sessionStorage.setItem("refreshToken", tokens.tokens.refreshToken);
 }
 
 captureName();

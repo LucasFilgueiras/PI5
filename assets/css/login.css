@@ -63,6 +63,7 @@ iframe {
     background: var(--bgblue);
     border-radius: .3rem;
     transition: .5s;
+    text-decoration: none;
 }
 
 .loginContainer .button:hover {
