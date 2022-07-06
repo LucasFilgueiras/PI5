@@ -7,7 +7,7 @@ function captureName() {
     const nameValue = name.value;
     sessionStorage.setItem("Nome", nameValue);
     await insertRegister("Professor");
-    window.location.href = "./gerPerguntas.html";
+    window.location.href = "../../index.html";
   });
 
   alunoButton.addEventListener("click", async () => {
@@ -15,7 +15,7 @@ function captureName() {
     const nameValue = name.value;
     sessionStorage.setItem("Nome", nameValue);
     await insertRegister("Aluno");
-    window.location.href = "./responderQuest.html";
+    window.location.href = "../../index.html";
   });
 }
 
