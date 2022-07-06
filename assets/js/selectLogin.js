@@ -6,7 +6,7 @@ async function login() {
 
   let login = {
     email: inputEmail,
-    password: inputPassword,
+    password: inputPassword
   };
 
   if (inputEmail == "" || inputPassword == "") {
@@ -15,8 +15,9 @@ async function login() {
   }
 
   let tokens = await postMethod(login, "user/login");
-  sessionStorage.setItem("accessToken", tokens.accessToken);
-  sessionStorage.setItem("refreshToken", tokens.refreshToken);
+  console.log(tokens);
+  sessionStorage.setItem("accessToken", tokens.tokens.accessToken);
+  sessionStorage.setItem("refreshToken", tokens.tokens.refreshToken);
 
   let accessVerify = sessionStorage.getItem("accessToken");
 
@@ -24,8 +25,15 @@ async function login() {
     window.alert("Insira email e senha válidos.");
   }
   else {
-    window.location.href = "./gerQuestionarios.html";
+    if (tokens.user.cargo == "Aluno") {
+      window.location.href = "./responderQuest.html";
+    } 
+    else if (tokens.user.cargo == "Professor") {
+      window.location.href = "./gerQuestionarios.html";
+    }
   }
+
+  
 }
 
 // async function verifyPosition() {

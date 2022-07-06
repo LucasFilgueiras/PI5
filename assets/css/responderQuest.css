@@ -103,6 +103,7 @@ main .button {
 
 main .button:hover {
     transform: scale3d(1.03, 1.03, 1.03);
+    cursor: pointer;
 }
 
 

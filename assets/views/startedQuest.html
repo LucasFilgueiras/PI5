@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criar Repsosta</title>
+    <title>Código da Sala</title>
 
     <link rel="stylesheet" href="../css/bannerProfessor.css">
-    <link rel="stylesheet" href="../css/criarResposta.css">
+    <link rel="stylesheet" href="../css/showIdRoom.css">
 </head>
 <body>
     <header class="teacherContainer">
         <div class="subContainer">
-            <h1>Bem vindo(a) Saulo</h1>
+            <h1 class="user">Bem vindo(a) Saulo</h1>
             <div class="imgContainer">
                 <img src="../images/imagemProfessor.svg" alt="Imagem do professor">
                 <p>Professor</p>
@@ -26,21 +26,11 @@
         </div>
     </header>
 
-    <div class="container">
-        <h1>Hora de criar as respostas!</h1>
-        <div class="subContainer1">
-            <p>Digite aqui a resposta correta:</p>
-            <input id="postAnswer1" type="text" placeholder="Digite aqui">
-        </div>
-        <div class="subContainer2">
-            <p>Digite aqui as outras possíveis respostas:</p>
-            <input id="postAnswer2" type="text" placeholder="Digite aqui">
-            <input id="postAnswer3" type="text" placeholder="Digite aqui">
-            <input id="postAnswer4" type="text" placeholder="Digite aqui">
-        </div>
-        <a href="./checkPergunta.html" class="button" id="allRight">Tudo certo!</a>
-    </div>
+    <main>
+        <h1>O seu questionário foi gerado, <br> o código é:</h1>
+        <p class="showCode"></p>
+    </main>
 
-    <script src="../js/postAnswer.js"></script>
+    <script src="../js/startedQuest.js"></script>
 </body>
 </html>
