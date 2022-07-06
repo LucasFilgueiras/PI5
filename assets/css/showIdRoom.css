@@ -22,7 +22,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8rem;
+    gap: 6rem;
 }
 
 main .showCode {
@@ -43,10 +43,17 @@ main .button {
     border-radius: .3rem;
     transition: .5s;
     text-decoration: none;
+    text-align: center;
 }
 
 main .button:hover {
     cursor: pointer;
     transform: scale3d(1.03, 1.03, 1.03);
     filter: brightness(1.07);
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }

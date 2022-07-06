@@ -10,24 +10,26 @@
 </head>
 <body>
     <header>
-        <h1>O que são metadados?</h1>
+        <h1 class="getEnunciado"></h1>
         <div class="line"></div>
     </header>
     
     <main>
         <div class="firstContainer">
-            <p>Tempo: <br><br> (segundos)</p>
+            <p class="showTime">Tempo: <br><br> (segundos)</p>
             <img src="../images/questExemplo.svg" alt="Imagem ilustrativa de um banco de dados">
             <p>Quantidade de <br> respostas: <br><br> (quantidade)</p>
         </div>
         <div class="secondContainer">
-            <a href="#" class="button answer">Resposta 1</a>
-            <a href="#" class="button answer">Resposta 2</a>
-            <a href="#" class="button answer">Resposta 3</a>
-            <a href="#" class="button answer">Resposta 4</a>
+            <a class="button answer" id="answer1"></a>
+            <a class="button answer" id="answer2"></a>
+            <a class="button answer" id="answer3"></a>
+            <a class="button answer" id="answer4"></a>
         </div>
     </main>
 
     <script src="../js/calcPI.js"></script>
+    <script src="../js/putAnswersQuestions.js"></script>
+    <script src="../js/countTime.js"></script>
 </body>
 </html>

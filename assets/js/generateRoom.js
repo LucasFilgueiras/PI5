@@ -1,8 +1,16 @@
-let attCode = document.querySelector(".button");
+let attCode = document.querySelector("#attCode");
+let genCode = document.querySelector("#genCode");
 
-let i = 1;
+let i = 1001;
+
+let showCode = document.querySelector(".showCode");
 
 attCode.addEventListener("click", () => {
-  let showCode = document.querySelector(".showCode");
   showCode.innerHTML = i++;
+});
+
+genCode.addEventListener("click", () => {
+  innerShowCode = showCode.innerHTML;
+  sessionStorage.setItem("CodeRoom", innerShowCode);
+  window.location.href = "./startedQuest.html";
 });
